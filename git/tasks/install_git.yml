@@ -1,0 +1,7 @@
+# install_git.yml
+---
+
+- name: git | install Git packages
+  package:
+    name: git
+    state: present

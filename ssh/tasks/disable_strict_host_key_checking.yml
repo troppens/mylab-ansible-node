@@ -1,0 +1,9 @@
+# disable_strict_host_key_checking.yml
+---
+
+- name: ssh | disable strict host key checking
+  blockinfile:
+    path: /etc/ssh/ssh_config
+    block: |
+      # Disable strict host key checking
+      StrictHostKeyChecking no

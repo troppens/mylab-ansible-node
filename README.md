@@ -18,6 +18,7 @@ Use desired roles in your playbook.
 - hosts: 10.1.1.20
   roles:
     - mylab_node/ssh
+    - mylab_node/chrony
     - mylab_node/git
 ```
 
@@ -26,6 +27,9 @@ Use desired roles in your playbook.
 
 ### mylab_node/ssh
 * Disable strict host key checking
+
+### mylab_node/chrony
+* Allow to step clock (good for virtual machines) 
 
 ### mylab_node/git
 * Install Git packages

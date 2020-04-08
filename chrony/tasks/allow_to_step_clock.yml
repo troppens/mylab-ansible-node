@@ -1,0 +1,10 @@
+# allow_to_step_clock.yml
+---
+
+- name: chrony | allow to step clock (good for virtual machines)
+  lineinfile:
+    path: /etc/chrony.conf
+    regexp: '^makestep'
+    line: makestep 1.0 -1
+  notify:
+    - restart chronyd

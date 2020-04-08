@@ -1,0 +1,7 @@
+# Handler for chrony
+---
+
+ - name: restart chronyd
+   service:
+     name: chronyd
+     state: restarted

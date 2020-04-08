@@ -1,0 +1,4 @@
+---
+# Configure chrony
+
+- import_tasks: allow_to_step_clock.yml

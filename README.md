@@ -23,5 +23,5 @@ Use desired roles in your playbook.
 
 ## Roles
 
-### mylab/ssh
+### mylab_node/ssh
 * Disable strict host key checking

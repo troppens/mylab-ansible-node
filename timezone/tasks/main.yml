@@ -1,0 +1,4 @@
+---
+# Configure timezone
+
+- import_tasks: set_timezone_berlin.yml

@@ -19,6 +19,7 @@ Use desired roles in your playbook.
   roles:
     - mylab_node/ssh
     - mylab_node/chrony
+    - mylab_node/timezone
     - mylab_node/git
 ```
 
@@ -30,6 +31,9 @@ Use desired roles in your playbook.
 
 ### mylab_node/chrony
 * Allow to step clock (good for virtual machines) 
+
+### mylabnode/timezone
+* Set timezone Europe/Berlin (hard coded) 
 
 ### mylab_node/git
 * Install Git packages

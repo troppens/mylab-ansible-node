@@ -1,0 +1,7 @@
+# Handler for timezone
+---
+
+ - name: restart crond
+   service:
+     name: crond
+     state: restarted

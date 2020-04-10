@@ -1,0 +1,8 @@
+# set_timezone_berlin.yml
+---
+
+- name: timezone | set timezone Europe/Berlin (hard coded)
+  timezone:
+    name: Europe/Berlin
+  notify:
+    - restart crond

@@ -1,0 +1,4 @@
+# Configure /etc/hosts
+---
+
+- import_tasks: copy_etc_hosts.yml

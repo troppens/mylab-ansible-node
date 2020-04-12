@@ -20,6 +20,7 @@ Use desired roles in your playbook.
     - mylab_node/ssh
     - mylab_node/chrony
     - mylab_node/timezone
+    - mylab_node/etc_hosts
     - mylab_node/git
 ```
 
@@ -34,6 +35,9 @@ Use desired roles in your playbook.
 
 ### mylabnode/timezone
 * Set timezone Europe/Berlin (hard coded) 
+
+### mylab_node/etc_hosts
+* Copy local /mylab/config/etc_hosts to /etc/hosts
 
 ### mylab_node/git
 * Install Git packages

@@ -1,0 +1,10 @@
+# copy_etc_hosts.yml
+---
+
+- name: etc_hosts | copy /etc/hosts
+  copy:
+    src: /mylab/config/etc_hosts
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: '0644'

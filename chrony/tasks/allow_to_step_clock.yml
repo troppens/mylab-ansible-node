@@ -8,3 +8,4 @@
     line: makestep 1.0 -1
   notify:
     - restart chronyd
+  when: "'chrony' in mylab_node_tasks"

@@ -6,3 +6,4 @@
     name: Europe/Berlin
   notify:
     - restart crond
+  when: "'timezone' in mylab_node_tasks"

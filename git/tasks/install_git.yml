@@ -5,3 +5,4 @@
   package:
     name: git
     state: present
+  when: "'git' in mylab_node_tasks"

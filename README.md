@@ -16,6 +16,13 @@ Use desired roles in your playbook.
 
 ```
 - hosts: 10.1.1.20
+  vars:
+    -mylab_node_tasks:
+      -ssh
+      -chrony
+      -timezone
+      -etc_hosts
+      -git
   roles:
     - mylab_node/ssh
     - mylab_node/chrony
@@ -23,6 +30,12 @@ Use desired roles in your playbook.
     - mylab_node/etc_hosts
     - mylab_node/git
 ```
+
+
+## Variables
+
+### mylab_node_tasks
+* Specify which entities to configure
 
 
 ## Roles

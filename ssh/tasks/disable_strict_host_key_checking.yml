@@ -7,3 +7,4 @@
     block: |
       # Disable strict host key checking
       StrictHostKeyChecking no
+  when: "'ssh' in mylab_node_tasks"

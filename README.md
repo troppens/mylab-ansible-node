@@ -12,19 +12,32 @@ Ansible roles to configure an already provisioned node (server)
 
 ## Usage
 
-Add entities to configure to variable `mylab_node_tasks`.
-
+Configure default entities:
 ```
-- hosts: 10.1.1.20
+- hosts: nodes
+  roles:
+   - mylab_node
+```
+
+Configure all entities:
+```
+- hosts: nodesr
   vars:
-    -mylab_node_entities:
-      -ssh
-      -chrony
-      -timezone
-      -etc_hosts
-      -git
+    - mylab_node_entities: "{{ mylab_node_entities_all }}"
   roles:
     - mylab_node
+```
+
+Configure ssh, chronyd and timezone only:
+```
+- hosts: nodes
+  vars:
+    - mylab_node_entities:
+      - ssh
+      - chronyd
+      - timezone
+  roles:
+   - mylab_node
 ```
 
 

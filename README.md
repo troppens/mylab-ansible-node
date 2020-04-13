@@ -17,7 +17,7 @@ Add entities to configure to variable `mylab_node_tasks`.
 ```
 - hosts: 10.1.1.20
   vars:
-    -mylab_node_tasks:
+    -mylab_node_entities:
       -ssh
       -chrony
       -timezone
@@ -30,8 +30,8 @@ Add entities to configure to variable `mylab_node_tasks`.
 
 ## Variables
 
-### mylab_node_tasks
-* Specify which entities to configure. See [defaults](defaults/main.yml) for defaults tasks."
+### mylab_node_entities
+* Specify which entities to configure. See [defaults](defaults/main.yml) for defaults entities"
 
 
 ## Entities

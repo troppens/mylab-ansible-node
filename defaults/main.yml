@@ -1,8 +1,8 @@
 # ./defaults/main.yml
 ---
 
-# Default entities for node
-mylab_node_tasks:
+# Default entities to configure
+mylab_node_entities:
   -ssh
   -chronyd
   -timezone

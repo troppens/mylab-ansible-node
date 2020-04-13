@@ -8,4 +8,4 @@
     owner: root
     group: root
     mode: '0644'
-  when: "'etc_hosts' in mylab_node_tasks"
+  when: "'etc_hosts' in mylab_node_entities"

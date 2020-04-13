@@ -6,3 +6,10 @@
     name: git
     state: present
   when: "'git' in mylab_node_entities"
+
+- name: git | set global user name
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ mylab_node_git_user_name }}"
+  when: "'git' in mylab_node_entities"

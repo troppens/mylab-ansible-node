@@ -40,6 +40,16 @@ Configure ssh, chronyd and timezone only:
    - mylab_node
 ```
 
+Customize Git settings:
+```
+- hosts: nodes
+  vars:
+    - mylab_node_entities: "{{ mylab_node_entities_all }}"
+    - mylab_node_git_user_name: "Erika Mustermann"
+  roles:
+    - mylab_node
+```
+
 
 ## Variables
 
@@ -48,6 +58,9 @@ Configure ssh, chronyd and timezone only:
 
 ### mylab_node_entities_all
 * List of all entities which can be configured. See [defaults](defaults/main.yml) for all entities. 
+
+### mylab_node_git_user_name
+* Git user name. See [defaults](defaults/main.yml) for default.
 
 
 ## Entities

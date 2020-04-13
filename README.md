@@ -16,12 +16,12 @@ Configure default entities:
 ```
 - hosts: nodes
   roles:
-   - mylab_node
+    - mylab_node
 ```
 
 Configure all entities:
 ```
-- hosts: nodesr
+- hosts: nodes
   vars:
     - mylab_node_entities: "{{ mylab_node_entities_all }}"
   roles:
@@ -37,7 +37,7 @@ Configure ssh, chronyd and timezone only:
       - chronyd
       - timezone
   roles:
-   - mylab_node
+    - mylab_node
 ```
 
 Customize Git settings:
@@ -79,3 +79,4 @@ Customize Git settings:
 
 ### git
 * Install Git packages
+* Set global user name

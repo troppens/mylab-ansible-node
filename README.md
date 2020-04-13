@@ -31,7 +31,7 @@ Add entities to configure to variable `mylab_node_tasks`.
 ## Variables
 
 ### mylab_node_tasks
-* Specify which entities to configure
+* Specify which entities to configure. See [defaults](defaults/main.yml) for defaults tasks."
 
 
 ## Entities

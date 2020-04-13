@@ -1,0 +1,9 @@
+# ./defaults/main.yml
+---
+
+# Default entities for node
+mylab_node_tasks:
+  -ssh
+  -chronyd
+  -timezone
+  -etc_hosts

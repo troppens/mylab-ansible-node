@@ -1,7 +1,7 @@
-# allow_to_step_clock.yml
+# ./tasks/chronyd.yml
 ---
 
-- name: chrony | allow to step clock (good for virtual machines)
+- name: chronyd | allow to step clock (good for virtual machines)
   lineinfile:
     path: /etc/chrony.conf
     regexp: '^makestep'

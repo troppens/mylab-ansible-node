@@ -1,0 +1,5 @@
+# ./handlers/main.yml
+---
+
+- import_tasks: chronyd.yml
+- import_tasks: chrond.yml

@@ -1,4 +1,4 @@
-# disable_strict_host_key_checking.yml
+# ./tasks/ssh.yml
 ---
 
 - name: ssh | disable strict host key checking

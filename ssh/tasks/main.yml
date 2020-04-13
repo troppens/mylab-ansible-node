@@ -1,4 +1,0 @@
----
-# Configure SSH
-
-- import_tasks: disable_strict_host_key_checking.yml

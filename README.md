@@ -12,7 +12,7 @@ Ansible roles to configure an already provisioned node (server)
 
 ## Usage
 
-Use desired roles in your playbook.
+Add entities to configure to variable `mylab_node_tasks`.
 
 ```
 - hosts: 10.1.1.20
@@ -24,11 +24,7 @@ Use desired roles in your playbook.
       -etc_hosts
       -git
   roles:
-    - mylab_node/ssh
-    - mylab_node/chrony
-    - mylab_node/timezone
-    - mylab_node/etc_hosts
-    - mylab_node/git
+    - mylab_node
 ```
 
 
@@ -38,19 +34,19 @@ Use desired roles in your playbook.
 * Specify which entities to configure
 
 
-## Roles
+## Entities
 
-### mylab_node/ssh
+### ssh
 * Disable strict host key checking
 
-### mylab_node/chrony
-* Allow to step clock (good for virtual machines) 
+### chronyd
+* Allow to step clock (good for virtual machines)
 
-### mylabnode/timezone
-* Set timezone Europe/Berlin (hard coded) 
+### timezone
+* Set timezone Europe/Berlin (hard coded)
 
-### mylab_node/etc_hosts
+### etc_hosts
 * Copy local /mylab/config/etc_hosts to /etc/hosts
 
-### mylab_node/git
+### git
 * Install Git packages

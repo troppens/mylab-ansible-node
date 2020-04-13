@@ -1,4 +1,0 @@
----
-# Configure Git
-
-- import_tasks: install_git.yml

@@ -1,4 +1,4 @@
-# copy_etc_hosts.yml
+# ./tasks/etc_hosts.yml
 ---
 
 - name: etc_hosts | copy /etc/hosts

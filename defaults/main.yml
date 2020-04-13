@@ -7,3 +7,11 @@ mylab_node_entities:
   -chronyd
   -timezone
   -etc_hosts
+ 
+# All entities which can be configured
+mylab_node_entities_all:
+  -ssh
+  -chronyd
+  -timezone
+  -etc_hosts
+  -git

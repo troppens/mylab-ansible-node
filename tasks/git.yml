@@ -13,3 +13,11 @@
     scope: global
     value: "{{ mylab_node_git_user_name }}"
   when: "'git' in mylab_node_entities"
+
+- name: git | set global user email
+  git_config:
+    name: user.email
+    scope: global
+    value: "{{ mylab_node_git_user_email }}"
+  when: "'git' in mylab_node_entities"
+

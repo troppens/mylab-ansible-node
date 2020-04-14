@@ -18,3 +18,6 @@ mylab_node_entities_all:
 
 # Default Git user name
 mylab_node_git_user_name: "Ulf Troppens"
+
+# Default Git user email
+mylab_node_git_user_email: "storageulf@gmail.com"

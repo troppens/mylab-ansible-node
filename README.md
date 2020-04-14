@@ -46,6 +46,7 @@ Customize Git settings:
   vars:
     - mylab_node_entities: "{{ mylab_node_entities_all }}"
     - mylab_node_git_user_name: "Erika Mustermann"
+    - mylab_node_git_user_email: "erika@example.com"
   roles:
     - mylab_node
 ```
@@ -61,6 +62,9 @@ Customize Git settings:
 
 ### mylab_node_git_user_name
 * Git user name. See [defaults](defaults/main.yml) for default.
+
+### mylab_node_git_user_email
+* Git user email. See [defaults](defaults/main.yml) for default.
 
 
 ## Entities
@@ -80,3 +84,4 @@ Customize Git settings:
 ### git
 * Install Git packages
 * Set global user name
+* Set global user email

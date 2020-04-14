@@ -47,6 +47,7 @@ Customize Git settings:
     - mylab_node_entities: "{{ mylab_node_entities_all }}"
     - mylab_node_git_user_name: "Erika Mustermann"
     - mylab_node_git_user_email: "erika@example.com"
+    - mylab_node_git_credential_cache_timeout: 3600  # setting in seconds
   roles:
     - mylab_node
 ```

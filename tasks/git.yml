@@ -25,5 +25,5 @@
   git_config:
     name: credential.helper
     scope: global
-    value: "cache"
+    value: "cache --timeout={{ mylab_node_git_credential_cache_timeout }}"
   when: "'git' in mylab_node_entities"

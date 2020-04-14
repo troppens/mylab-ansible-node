@@ -21,3 +21,6 @@ mylab_node_git_user_name: "Ulf Troppens"
 
 # Default Git user email
 mylab_node_git_user_email: "storageulf@gmail.com"
+
+# Default Git credential cache timeout 1 week (setting is in seconds)
+mylab_node_git_credential_cache_timeout: "604800"

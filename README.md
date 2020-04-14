@@ -66,6 +66,9 @@ Customize Git settings:
 ### mylab_node_git_user_email
 * Git user email. See [defaults](defaults/main.yml) for default.
 
+### mylab_node_git_credential_cache_timeout
+* Git credential cache timeout. See [defaults](defaults/main.yml) for default.
+
 
 ## Entities
 

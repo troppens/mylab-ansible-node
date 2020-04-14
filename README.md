@@ -85,3 +85,4 @@ Customize Git settings:
 * Install Git packages
 * Set global user name
 * Set global user email
+* Set git to use the credential memory cache

@@ -21,3 +21,9 @@
     value: "{{ mylab_node_git_user_email }}"
   when: "'git' in mylab_node_entities"
 
+- name: git | set git to use the credential memory cache
+  git_config:
+    name: credential.helper
+    scope: global
+    value: "cache"
+  when: "'git' in mylab_node_entities"

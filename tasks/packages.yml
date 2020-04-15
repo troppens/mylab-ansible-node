@@ -5,5 +5,5 @@
   package:
     name: "{{ item }}"
     state: present
-  loop: "{{ mylab_node_packages }}"
+  loop: "{{ mylab_node_packages | flatten }}"
   when: "'package' in mylab_node_entities"

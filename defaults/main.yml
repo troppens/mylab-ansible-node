@@ -7,6 +7,7 @@ mylab_node_entities:
   -chronyd
   -timezone
   -etc_hosts
+  -packages
  
 # All entities which can be configured
 mylab_node_entities_all:
@@ -14,6 +15,7 @@ mylab_node_entities_all:
   -chronyd
   -timezone
   -etc_hosts
+  -packages
   -git
 
 # Default Git user name
@@ -24,3 +26,8 @@ mylab_node_git_user_email: "storageulf@gmail.com"
 
 # Default Git credential cache timeout 1 week (setting is in seconds)
 mylab_node_git_credential_cache_timeout: "604800"
+
+# Default packages to be installed
+mylab_node_packages:
+  - tree
+  - vim

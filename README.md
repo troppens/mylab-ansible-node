@@ -40,6 +40,16 @@ Configure ssh, chronyd and timezone only:
     - mylab_node
 ```
 
+Customize to be installed sofware packages:
+```
+- hosts: nodes
+  vars:
+    - mylab_node_packages:
+      - vim
+  roles:
+    - mylab_node
+```
+
 Customize Git settings:
 ```
 - hosts: nodes
@@ -60,6 +70,10 @@ Customize Git settings:
 
 ### mylab_node_entities_all
 * List of all entities which can be configured. See [defaults](defaults/main.yml) for all entities. 
+
+### mylab_node_packages
+* List of software packages to be installed on all nodes. See [defaults](defaults/main.yml) for all entities. 
+
 
 ### mylab_node_git_user_name
 * Git user name. See [defaults](defaults/main.yml) for default.
@@ -84,6 +98,9 @@ Customize Git settings:
 
 ### etc_hosts
 * Copy local /mylab/config/etc_hosts to /etc/hosts
+
+### packages
+* Install additional software packages desired on all nodes
 
 ### git
 * Install Git packages

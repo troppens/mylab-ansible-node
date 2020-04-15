@@ -1,0 +1,9 @@
+# ./tasks/ssh.yml
+---
+
+- name: packages | install packages
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ mylab_node_packages }}"
+  when: "'package' in mylab_node_entities"

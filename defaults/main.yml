@@ -28,6 +28,9 @@ mylab_node_git_user_email: "storageulf@gmail.com"
 mylab_node_git_credential_cache_timeout: "604800"
 
 # Default packages to be installed
-mylab_node_packages:
+mylab_node_default_packages:
   - tree
   - vim
+
+# Packages to be installed
+mylab_node_packages: "{{ mylab_node_default_packages }}"

@@ -71,8 +71,11 @@ Customize Git settings:
 ### mylab_node_entities_all
 * List of all entities which can be configured. See [defaults](defaults/main.yml) for all entities. 
 
+### mylab_node_default_packages
+* Default list of software packages to be installed on all nodes. See [defaults](defaults/main.yml) for default packages. 
+
 ### mylab_node_packages
-* List of software packages to be installed on all nodes. See [defaults](defaults/main.yml) for all entities. 
+* List of software packages to be installed on all nodes. See [defaults](defaults/main.yml) for default packages. 
 
 
 ### mylab_node_git_user_name
